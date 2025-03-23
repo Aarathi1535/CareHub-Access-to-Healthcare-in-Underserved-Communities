@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -6,7 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Card } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { motion } from "framer-motion";
-import { BookOpen, Search, Download, Heart, Thermometer, Baby, Virus, Brain, Filter } from "lucide-react";
+import { BookOpen, Search, Download, Heart, Thermometer, Baby, Stethoscope, Brain, Filter } from "lucide-react";
 
 // Mock data for demonstration
 const mockResources = [
@@ -86,7 +87,7 @@ const mockResources = [
 
 const categoryIcons = {
   preventive: <Heart className="h-5 w-5" />,
-  disease: <Virus className="h-5 w-5" />,
+  disease: <Stethoscope className="h-5 w-5" />,
   maternal: <Baby className="h-5 w-5" />,
   mental: <Brain className="h-5 w-5" />
 };
@@ -233,7 +234,7 @@ const Education = () => {
                         <span className="hidden sm:inline">Maternal</span>
                       </TabsTrigger>
                       <TabsTrigger value="disease" className="flex items-center gap-1">
-                        <Virus className="h-4 w-4" />
+                        <Stethoscope className="h-4 w-4" />
                         <span className="hidden sm:inline">Disease</span>
                       </TabsTrigger>
                       <TabsTrigger value="mental" className="flex items-center gap-1">

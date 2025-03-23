@@ -85,7 +85,7 @@ const Navigation = () => {
                   key={link.href}
                   to={link.href}
                   className={cn(
-                    "px-3 py-2 rounded-md flex items-center gap-2 font-medium transition-all duration-200",
+                    "px-3 py-2 rounded-md flex items-center gap-2 font-medium transition-all duration-200 animate-fade-in",
                     isActive 
                       ? "text-carehub-600 bg-carehub-50 dark:bg-carehub-950/30" 
                       : "text-muted-foreground hover:text-foreground hover:bg-secondary/80"
@@ -94,7 +94,6 @@ const Navigation = () => {
                     animationDelay: `${(index + 1) * 50}ms`,
                     animationFillMode: 'backwards'
                   }}
-                  className="animate-fade-in"
                 >
                   <Icon className="h-4 w-4" />
                   {link.label}
